@@ -1,0 +1,72 @@
+/*
+
+  Angel Castillo - Diseño rancio pero honesto
+
+*/
+
+
+body{
+    background-color: #273746;
+    color: #ECF0F1;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+footer{
+    background-color: black;
+    color: darkgrey;
+    font-family: monospace;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 84px;
+}
+
+a {
+    color: #ECF0F1;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    grid-template-rows: [main-start] 100px [content-start] 100px [content-end] 100px [main-end];
+  }
+.lateral-izquierda {
+    grid-column-start: main-start;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+  }
+  .centro{
+    grid-column-start: content-start;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+  }
+  
+
+  .lateral-derecha {
+    grid-column-start: content-end;
+    grid-row-start: main-start;
+    grid-row-end: content-end;
+  }
+
+  
+  
